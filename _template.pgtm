@@ -21,7 +21,7 @@ select 1 as vacio      </SelectStatement>
   </DataSources>
   <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
     <Pages>
-      <Page type="query" queryName="QueryVacio" numberByDataSource="0" fileName="QueryVacio" caption="Query Vacio" shortCaption="Query Vacío" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="0" viewAbilityMode="0" editAbilityMode="0" multiEditAbility="0" copyAbilityMode="0" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
+      <Page type="query" queryName="QueryVacio" numberByDataSource="0" fileName="QueryVacio" caption="Query Vacio" shortCaption="Query Vacío" groupName="Configuracion" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="0" viewAbilityMode="0" editAbilityMode="0" multiEditAbility="0" copyAbilityMode="0" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
         <BeforeGridText/>
         <DetailedDescription/>
         <ColumnPresentations>
@@ -92,6 +92,8 @@ include('inc/funciones.php');          </BeforePageExecute>
     <PHPOptions/>
     <Groups>
       <Group caption="No group"/>
+      <Group caption="Produccion"/>
+      <Group caption="Configuracion"/>
     </Groups>
     <outgoingMailSettings mailer="0" fromEmail="" fromName=""/>
   </Presentation>
