@@ -18,7 +18,7 @@
   </DataSources>
   <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
     <Pages>
-      <Page type="table" tableName="productos" numberByDataSource="0" fileName="productos" caption="Productos" shortCaption="Productos" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
+      <Page type="table" tableName="productos" numberByDataSource="0" fileName="productos" caption="Productos" shortCaption="Productos" groupName="Configuracion" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
         <BeforeGridText/>
         <DetailedDescription/>
         <ColumnPresentations>
@@ -75,108 +75,7 @@
             <Column fieldName="DescArticulo"/>
           </MultiEdit>
         </Columns>
-        <Details>
-          <Detail caption="Detallepartprod">
-            <Page type="table" tableName="detallepartprod" numberByDataSource="0" fileName="detallepartprod" caption="Detallepartprod" shortCaption="Detallepartprod" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
-              <BeforeGridText/>
-              <DetailedDescription/>
-              <ColumnPresentations>
-                <ColumnPresentation fieldName="idDetallePartProd" caption="Id Detalle Part Prod" showColumnFilter="false" selectedFilterOperators="1573119">
-                  <ViewProperties type="text">
-                    <Format type="number" thousandSeparator="."/>
-                  </ViewProperties>
-                  <EditProperties type="textBox" maxLength="0"/>
-                </ColumnPresentation>
-                <ColumnPresentation fieldName="FKParteProduccion" caption="FKParte Produccion" selectedFilterOperators="1573119">
-                  <Lookup tableName="partesproduccion" linkFieldName="idParteProduccion" displayFieldName="fkUsuario" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
-                  <ViewProperties type="text">
-                    <Format type="number" thousandSeparator="."/>
-                  </ViewProperties>
-                  <EditProperties type="dynamicCombobox"/>
-                </ColumnPresentation>
-                <ColumnPresentation fieldName="FkProductos" caption="Fk Productos" selectedFilterOperators="1589247">
-                  <Lookup tableName="productos" linkFieldName="idProductos" displayFieldName="DescArticulo" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
-                  <ViewProperties type="text" maxLength="75"/>
-                  <EditProperties type="dynamicCombobox"/>
-                </ColumnPresentation>
-                <ColumnPresentation fieldName="Cantidad" caption="Cantidad" showColumnFilter="false" selectedFilterOperators="1573119">
-                  <ViewProperties type="text">
-                    <Format type="number" thousandSeparator="."/>
-                  </ViewProperties>
-                  <EditProperties type="textBox" maxLength="0"/>
-                </ColumnPresentation>
-              </ColumnPresentations>
-              <Columns>
-                <List>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </List>
-                <View>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </View>
-                <Edit>
-                  <Column fieldName="idDetallePartProd" visible="false"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </Edit>
-                <Insert>
-                  <Column fieldName="idDetallePartProd" visible="false"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </Insert>
-                <QuickFilter>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </QuickFilter>
-                <FilterBuilder>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </FilterBuilder>
-                <Print>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </Print>
-                <Export>
-                  <Column fieldName="idDetallePartProd"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </Export>
-                <Compare>
-                  <Column fieldName="idDetallePartProd" visible="false"/>
-                  <Column fieldName="FKParteProduccion"/>
-                  <Column fieldName="FkProductos"/>
-                  <Column fieldName="Cantidad"/>
-                </Compare>
-                <MultiEdit>
-                  <Column fieldName="idDetallePartProd" visible="false"/>
-                  <Column fieldName="FKParteProduccion" visible="false"/>
-                  <Column fieldName="FkProductos" visible="false"/>
-                  <Column fieldName="Cantidad"/>
-                </MultiEdit>
-              </Columns>
-              <Details/>
-              <RecordPermissions useRecordPermissions="false"/>
-              <PartitionNavigators/>
-            </Page>
-            <MasterForeignKeyColumnMap>
-              <FieldMap masterColumnName="idProductos" foreginColumnName="FkProductos"/>
-            </MasterForeignKeyColumnMap>
-          </Detail>
-        </Details>
+        <Details/>
         <RecordPermissions useRecordPermissions="false"/>
         <PartitionNavigators/>
       </Page>
@@ -1080,7 +979,12 @@
   <PdfUserStyles/>
   <PrintUserStyles/>
   <UserJS/>
-  <ExcludedPaths/>
+  <ExcludedPaths>
+    <Mask>
+login.php    </Mask>
+    <Mask>
+authorization.php    </Mask>
+  </ExcludedPaths>
   <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true"/>
   <DefaultDataFormats numberAfterDecimal="2" DecimalSeparator="," ThousandSeparator="." DateTimeFormat="d-m-Y H:i:s" DateFormat="d-m-Y" firstDayOfWeek="0"/>
 </Project>
