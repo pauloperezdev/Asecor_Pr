@@ -32,47 +32,96 @@
             <ViewProperties type="text" maxLength="75"/>
             <EditProperties type="textBox" maxLength="80"/>
           </ColumnPresentation>
+          <ColumnPresentation fieldName="codArti" caption="Codigo" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="25"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="medidaArt" caption="Medida" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" numberAfterDecimal="2" decimalSeparator="," thousandSeparator="."/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="unidadMedArt" caption="Unidad de Medida" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="externalFile"/>
+            <EditProperties type="comboBox">
+              <Values>
+                <Value name="Pies" caption="Pies"/>
+                <Value name="M3" caption="M3"/>
+              </Values>
+            </EditProperties>
+          </ColumnPresentation>
         </ColumnPresentations>
         <Columns>
           <List>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </List>
           <View>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </View>
           <Edit>
             <Column fieldName="idProductos" visible="false"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </Edit>
           <Insert>
             <Column fieldName="idProductos" visible="false"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </Insert>
           <QuickFilter>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </QuickFilter>
           <FilterBuilder>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </FilterBuilder>
           <Print>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </Print>
           <Export>
             <Column fieldName="idProductos"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </Export>
           <Compare>
             <Column fieldName="idProductos" visible="false"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </Compare>
           <MultiEdit>
             <Column fieldName="idProductos" visible="false"/>
             <Column fieldName="DescArticulo"/>
+            <Column fieldName="codArti"/>
+            <Column fieldName="medidaArt"/>
+            <Column fieldName="unidadMedArt"/>
           </MultiEdit>
         </Columns>
         <Details/>
